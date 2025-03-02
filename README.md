@@ -153,9 +153,7 @@ The system will retrieve the most relevant document chunks and generate a respon
 ### Note
 `__pycache__`: This folder is automatically created by Python to store compiled bytecode. It is not part of the project logic and can be ignored. If you want to avoid generating this folder, you can run Python with the -B flag:
 
-```bash
-python -B main.py
-```
+`python -B main.py`
 
 ### Example Workflow
 
@@ -167,6 +165,7 @@ python -B main.py
 - The system retrieves the most relevant document chunks and generates a response using OpenAI's GPT-3.5-turbo model.
 
 ### Troubleshooting
+
 ***API Key Errors***
 
 Ensure that the API keys in the .env file are correct and have not expired.
