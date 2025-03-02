@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 import chromadb
 import google.generativeai as genai
-from scraping import scrape_articles  # Assuming you are still using this for scraping articles
+from scraping import scrape_articles 
 
 # Load environment variables from .env file
 load_dotenv()
@@ -99,8 +99,6 @@ def query_documents(question, n_results=2):
     print("==== Returning relevant chunks ====")
     return relevant_chunks
 
-
-# Function to generate a response from Gemini
 # Function to generate a response from OpenAI
 def generate_response(question, relevant_chunks):
 
