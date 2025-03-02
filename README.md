@@ -158,6 +158,7 @@ python -B main.py
 ```
 
 ### Example Workflow
+
 - The script scrapes articles related to finance using the NewsAPI.
 - The articles are saved in the articles folder.
 - The script loads the articles, splits them into chunks, and generates embeddings using the Gemini API.
@@ -167,14 +168,20 @@ python -B main.py
 
 ### Troubleshooting
 ***API Key Errors***
+
 Ensure that the API keys in the .env file are correct and have not expired.
 If you encounter errors related to API keys, double-check the .env file and the corresponding API documentation.
+
 ***ChromaDB Errors***
+
 If the ChromaDB collection is not created or accessed correctly, ensure that the chroma_persistent_storage folder exists and is writable.
+
 ***Scraping Errors***
+
 If the script fails to scrape articles, check the NewsAPI key and ensure that the API is functioning correctly.
 
 ### Future Improvements
+
 - Support for More Data Sources: Extend the scraping functionality to include more data sources (e.g., RSS feeds, other news APIs).
 - Advanced Querying: Implement more advanced querying techniques, such as filtering by date, source, or relevance score.
 - User Interface: Develop a web-based or GUI-based interface for easier interaction with the system.
